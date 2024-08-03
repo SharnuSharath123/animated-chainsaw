@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.chainsaw {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.body {
+    position: absolute;
+    background-color: #666;
+    width: 80px;
+    height: 40px;
+    top: 30px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.blade {
+    position: absolute;
+    background-color: #999;
+    width: 120px;
+    height: 20px;
+    top: 20px;
+    left: 90px;
+    border-radius: 5px;
+    transform-origin: left center;
+    animation: spin 1s linear infinite;
+}
+
+.handle {
+    position: absolute;
+    background-color: #444;
+    width: 20px;
+    height: 60px;
+    top: 20px;
+    left: 10px;
+    border-radius: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
